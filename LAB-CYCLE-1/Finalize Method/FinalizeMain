@@ -1,0 +1,10 @@
+public class FinalizeMain {
+    public static void main(String[] args) {
+        ABC obj1 = new ABC (2,3,5);
+        ABC obj2 = new ABC (4,2,1);
+        obj1.print_product();
+        obj2.print_product();
+        obj1 = null;
+        System.gc();
+    }
+}
