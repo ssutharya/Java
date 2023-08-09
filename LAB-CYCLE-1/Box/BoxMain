@@ -1,0 +1,12 @@
+public class BoxMain {
+    public static void main(String[] args) {
+         Box b1=new Box(4);
+        System.out.println("Cube -> volume : "+b1.volume()+" area : "+b1.area());
+        
+        Box b2=new Box(20,10);
+        System.out.println("Square Prism -> volume : "+b2.volume()+" area : "+b2.area());
+        
+        Box b3=new Box(6,3,4);
+        System.out.println("Reactangular Prism -> volume : "+b3.volume()+" area : "+b3.area());
+    }
+}
