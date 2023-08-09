@@ -1,0 +1,14 @@
+public class ShapesMain {
+    public static void main(String[] args) {
+        Cylinder cylinder=new Cylinder(32,4);
+        double cylVol=cylinder.printVolume();
+        double cylArea=cylinder.printArea();
+        
+        System.out.println("Cylinder-> Area : "+cylArea+" Volume: "+cylVol);
+        
+        Sphere sphere=new Sphere(20);
+        double sphVol=sphere.printVolume();
+        double sphArea=sphere.printArea();
+        System.out.println("sphere-> Area : "+sphArea+" Volume: "+sphVol);
+    }
+}
