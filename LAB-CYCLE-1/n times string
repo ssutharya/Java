@@ -1,0 +1,15 @@
+public class nTimesStr {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        String n = args[0];
+        String str = args[1];
+        int num=Integer.parseInt(n);
+        
+        for(int i = 0; i < num; i++){
+            System.out.print (str + " ");
+        }
+    }
+}
