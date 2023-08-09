@@ -1,0 +1,8 @@
+public class EmployeeMain {
+    public static void main(String[] args) {
+        SalarySlip employee=new SalarySlip("Aaa", "A5346", 20000);
+        employee.print_info();
+        employee.SalaryCalc();
+        employee.print_slip();
+    }
+}
