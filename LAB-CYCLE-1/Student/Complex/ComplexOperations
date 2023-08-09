@@ -1,0 +1,27 @@
+import java.lang.Math;
+
+class complexOperations {
+    public static Complex add(Complex c1, Complex c2) {
+        Complex c = new Complex();
+        c.setReal(c1.getReal()+c2.getReal());
+        c.setImag(c1.getImag()+c2.getImag());
+        return c;
+    }
+    public static Complex multiply(Complex c1, Complex c2)
+    {
+        Complex c = new Complex();
+        double real=(c1.getReal()*c2.getReal())-(c1.getImag()*c2.getImag());
+        c.setReal(real);
+        double imag=(c1.getReal()*c2.getImag())+(c2.getReal()*c1.getImag());
+        c.setImag(imag);
+        return c;
+    }
+    public static double modulus(Complex c)
+    {
+        double mod=0;
+        mod=(c.getReal()*c.getReal())+((c.getImag()*c.getImag()));
+        mod=Math.sqrt(mod);
+        
+        return mod;
+    }
+}
